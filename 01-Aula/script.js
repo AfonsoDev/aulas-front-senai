@@ -44,28 +44,62 @@
 const $calcular = document.getElementById('botaocalcular');
 
 
+const calcularMedia = (n1, n2) => (parseInt(n1) + parseInt(n2) ) /2;
+const verificarSituacao = (media) => media >= 5 ? "Aprovado" : "Reprovado"
 
-function calcularMedia () {
+
+const exibirMedia = () => {
     const $nome = document.getElementById('nome');
-    const $nota1 = document.getElementById('nota1');
-    const $nota2 = document.getElementById('nota2');
+    const nota1 = document.getElementById('nota1').value;
+    const nota2 = document.getElementById('nota2').value;
     const $media = document.getElementById('media');
     const $situacao = document.getElementById('situacao');
-    // console.log($nome.value);
 
-    const media  = (parseInt($nota1.value) + parseInt($nota2.value)) /2; 
+    const media = calcularMedia(nota1, nota2);
+    $situacao.value = verificarSituacao(media);
 
-        if( media >= 5){
-            $situacao.value = "APROVADO";
-            $situacao.style.color = 'green';
-            //Criar classe no css depois add no javascript
+        // if( media >= 5){
+        //     $situacao.value = "APROVADO";
+        //     $situacao.style.color = 'green';
+        //     //Criar classe no css depois add no javascript
             
-        }else{
-            $situacao.value = "Reprovado";
-            $situacao.style.color = 'red';
-        }
+        // }else{
+        //     $situacao.value = "Reprovado";
+        //     $situacao.style.color = 'red';
+        // }
 
-        $media.value = media;
+        // $media.value = media;
 }
 
-$calcular.addEventListener('click',calcularMedia);
+
+const calcularConceito = () => {
+    const media = document.getElementById('media').value;   
+    const $conceito = document.getElementById('conceito');
+
+    if(media == 0 || media < 3){
+        $conceito.value = "E";
+    }else{
+        if(media == 5 || media < 3){
+            $conceito.value = "D";
+        }else{
+            if(media == 5 || media < 8){
+                $conceito.value = "C";
+            }else{
+                if(media == 5 || media < 10){
+                    $conceito.value = "B";
+                }else{
+                    if(media == 10){
+                        $conceito.value = "A";
+                    }
+                }
+            }
+        }
+    }
+}
+
+function calcular(){
+    verificarSituacao();
+    calcularConceito();
+}
+
+$calcular.addEventListener('click',calcular);
