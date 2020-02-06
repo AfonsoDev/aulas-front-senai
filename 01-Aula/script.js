@@ -57,12 +57,12 @@ function calcularMedia () {
 
         if( media >= 5){
             $situacao.value = "APROVADO";
-            $situacao.style.color = 'green'
+            $situacao.style.color = 'green';
             //Criar classe no css depois add no javascript
             
         }else{
-            $situacao.value = "Reprovado"
-            $situacao.style.color = 'red'
+            $situacao.value = "Reprovado";
+            $situacao.style.color = 'red';
         }
 
         $media.value = media;
