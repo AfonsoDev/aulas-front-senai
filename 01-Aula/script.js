@@ -40,8 +40,10 @@
 // nota1 += 1;
 
 
-
+const $exibir = document.getElementById('exibir');
+const $oculta = document.getElementById('oculta');
 const $calcular = document.getElementById('botaocalcular');
+const $container = document.querySelector('.container')
 
 
 const calcularMedia = (n1, n2) => (parseInt(n1) + parseInt(n2) ) /2;
@@ -58,6 +60,7 @@ const exibirMedia = () => {
     const media = calcularMedia(nota1, nota2);
     $situacao.value = verificarSituacao(media);
 
+        $media.value = media;
         // if( media >= 5){
         //     $situacao.value = "APROVADO";
         //     $situacao.style.color = 'green';
@@ -98,8 +101,21 @@ const calcularConceito = () => {
 }
 
 function calcular(){
-    verificarSituacao();
+    exibirMedia();
     calcularConceito();
 }
 
+const exibir = ( el ) =>{
+    el.classList.add( 'exibir' );
+}
+
+
+const oculta = ( el ) =>{
+    el.classList.remove( 'exibir' );
+}
+
+
+
 $calcular.addEventListener('click',calcular);
+$exibir.addEventListener('click',() => exibir($container));
+$oculta.addEventListener('click',() => oculta($container));

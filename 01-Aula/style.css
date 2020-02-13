@@ -4,3 +4,11 @@
 .reprovado{
     color: red;
 }
+.container{
+    display: none;
+    justify-items: center;
+    gap: 1vh;
+}
+.exibir{
+    display: grid;
+}
