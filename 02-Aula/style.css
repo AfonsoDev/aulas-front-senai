@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    /* Alinhamento  */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: blue;
+    color: white;
+}
+main{
+    display: flex;
+    width: 85vw;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-around;
+    /* Tira o esticamento da tela */
+    /* align-items: center; */
+    background-color: teal;
+    margin: 5vh auto;
+    padding: 5vw;
+    box-sizing: border-box;
+}
+main label{
+    color: white;
+}
+main input{
+    border: none;
+    background-color: teal;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 4vh;
+}
+main button{
+    font-size: 5vh;
+    padding: 1.2vh;
+}
+footer{
+    height: 15vh;
+    width: 80vw;
+    background-color: teal;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 2vh;
+}
