@@ -15,6 +15,39 @@
         <input type="button" value="verde" id="verde">
         <input type="button" value="automatico" id="automatico">        
         
-    <script src="semaforo.js"></script>
+    <script>
+
+        const $verde = document.getElementById("verde");
+        const $amarelo = document.getElementById("amarelo");
+        const $vermelho = document.getElementById("vermelho");
+        const $automatico = document.getElementById("automatico");
+
+
+    function auto(){
+     
+    }
+
+
+    function ligarVerde (verde){
+        document.getElementById("img").src="./img/verde.png";
+    }
+    function ligarAmarelo (amarelo){
+        document.getElementById("img").src="./img/amarelo.png";
+    }
+    function ligarVermelho (vermelho){
+        document.getElementById("img").src="./img/vermelho.png";
+    }
+    
+    
+    
+    
+    
+        $verde.addEventListener('click',ligarVerde)
+        $vermelho.addEventListener('click',ligarVermelho)
+        $amarelo.addEventListener('click',ligarAmarelo)
+        $automatico.addEventListener('click',auto)
+    
+    
+    </script>
     </body> 
 </html>
