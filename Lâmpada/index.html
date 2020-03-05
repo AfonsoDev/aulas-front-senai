@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lâmpada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div  class="conteiner" id="conteiner">
+        <h1>Lâmpada - SENAI - 2020</h1>
+        <img onclick="piscar()" src="./img/desligada.jpg" alt="Lâmpada desligada" id="lampada" >
+        <button class="interruptor" id="interruptor">Parar</button>
+        
+
+        
+    </div>
+
+
+
+
+    <script>
+        $lampada = document.getElementById("lampada");
+        let id1 = 0;
+        let id2 = 0;
+
+    function mulher(){
+        document.getElementById("lampada").src="./img/desligada.jpg";
+    }
+    function poste(){
+        document.getElementById("lampada").src="./img/ligada.jpg";
+    }
+    const piscar = () =>{
+        id1 = setInterval(poste, 100);
+        id2 = setInterval(mulher, 300)
+    }
+    
+    $lampada.addEventListener('mouseenter', poste);
+    $lampada.addEventListener('mouseout', mulher);
+
+    </script>
+
+</body>
+</html>

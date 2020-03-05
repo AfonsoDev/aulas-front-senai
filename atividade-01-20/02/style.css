@@ -1,17 +1,17 @@
 .barra{
     width: 490px;
     height: 35px;
-    background-color: white;;
-    margin-left: 100px;
-    margin-top: 4px;
+    margin-left: auto;
+    margin-top: auto;
     margin-bottom: 4px;
 }
-.barraResultado{
-    height: 100px;
-    width: 490px;
-    overflow: scroll;
+#barraResultado{
+    height: 320px;
+    width: 380px;
+    background-color: pink;
+    margin-top: auto;
     margin-left: 100px;
-    background-color: red;
+    overflow-y: scroll;
 }
 h1{
     font-size: 24px;
@@ -21,6 +21,30 @@ h1{
 
 }
 .select{
-    width: 100%;
+    width: 300px;
     height: 35px;
+    margin-left: 150px;
+}
+.numeracao{
+    height: 42px;
+    width: 50px;
+    float: left;
+    background-color: red;
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 24px;
+    color: #fff;
+    padding-top: 8px;
+}
+
+.resposta{
+    height: 42px;
+    width: 290px;
+    float: left;
+    text-align: center;
+    font-family: "comic sans ms";
+    font-size: 24px;
+    padding-top: 8px;
+    
+    
 }
