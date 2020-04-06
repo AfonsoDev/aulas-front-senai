@@ -1,0 +1,146 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+/*------------------------------------------------------------------ INICIO DO FON TRAP ---------------------------------------------------------------*/
+
+/*------------------------------------------------------------------INICIO DO HOVER---------------------------------------------------------------*/
+.btn:hover{
+    cursor: pointer;
+}
+/*------------------------------------------------------------------ FIM DO HOVER ---------------------------------------------------------------*/
+
+body{
+    color: white;
+    background-image: url(../img/bg-contato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.text-center{
+    text-align: center;   
+}
+.text-left{
+    text-align: left;   
+}
+.text-right{
+    text-align: right;   
+}
+.btn{
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+}
+.btn-lg{
+    width: 250px;
+    
+}
+.btn-md{
+    width: 150px;
+}
+.mt-1{
+    margin-bottom: 3px;
+}
+.mt-2{
+    margin-bottom: 6px;
+}
+.mt-3{
+    margin-bottom: 9px;
+}
+.mt-4{
+    margin-bottom: 12px;
+}
+.text-primaria{
+    background-color: #2727c1;
+    color: white;
+    border: none;
+}
+.py-0{
+    padding: 0px;
+}
+.py-1{
+    padding: 1px;
+}
+.py-2{
+    padding: 2px;
+}
+.py-3{
+    padding: 3px;
+}
+.py-4{
+    padding: 4px;
+}
+.py-5{
+    padding: 5px;
+}
+.py-6{
+    padding: 6px;
+}
+/*------------------------------------------------------------------ FINAL DO FON TRAP ---------------------------------------------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.input{
+    display: block;
+    height: 30px;
+    width: 350px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+    list-style: none;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.33);
+    text-align: center;
+}
+.contato_frm{
+    width: 400px;
+    margin: 120px auto 0px auto;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.select_form{
+    width: 350px;
+    border-radius: 15px;
+    height: 30px;
+    outline: none;
+    margin-left: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.33);
+}
+.obstxt{
+     margin: 15px auto 0px auto;
+        width: 400px;
+}
+.radio{
+     font-size: 16px;
+    font-family: Arial;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.33);
+}
+textarea{
+     resize: none;
+}
+
+.texteditone{
+    font-size: 16px;
+    font-family: Arial;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.33);
+    
+}
+.contato_frm_Div{
+    background-color: red;   
+}
